@@ -19,6 +19,6 @@ export default defineComponent({
 
 <style lang="less">
 main#main {
-  background-color: #3EB489;
+  min-height: 100vh;
 }
 </style>
