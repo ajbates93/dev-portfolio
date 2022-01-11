@@ -7,7 +7,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'mint-green': '#76c1b2'
+        'mint-green': '#76c1b2',
+        'pastel-blue': '#76abc1',
+        'dark-pink': '#c176ab'
       }
     },
   },
