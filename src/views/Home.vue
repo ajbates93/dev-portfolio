@@ -1,7 +1,9 @@
 <template>
-  <div id="home" class="mx-auto">
-    <div id="hero" class="flex max-w-screen-xl mx-auto">
-      <div class="hero-icon flex-auto w-1/3"></div>
+  <div id="home" class="mx-auto w-full">
+    <div id="hero" class="mx-auto max-w-screen-xl py-10">
+      <div class="hero-title text-white font-bold text-5xl mb-5">Hi, I'm Alex</div>
+      <div class="hero-subtitle text-white text-black-700 text-xl">I'm a front-end developer, musician and dog-owner.</div>
+      <!-- <div class="hero-icon flex-auto w-1/3"></div>
       <div class="hero-content pt-20 pl-20 flex-auto w-2/3 text-right">
         <div class="hero-title text-white font-bold text-5xl mb-5">Hi, I'm Alex</div>
         <div class="hero-subtitle text-black-700 text-xl">I'm a front-end developer, musician and dog-owner.</div>
@@ -23,17 +25,7 @@
             </p>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="portfolio" class="bg-mint-green">
-      <div class="py-20 mx-auto max-w-screen-xl">
-        <div class="hero-title text-white font-bold text-5xl mb-5">My Portfolio</div>
-      </div>
-    </div>
-    <div id="about" class="bg-dark-pink">
-      <div class="py-20 mx-auto max-w-screen-xl">
-        <div class="hero-title text-white font-bold text-5xl mb-5">About me</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -46,35 +38,9 @@ export default defineComponent({
 });
 </script>
 
-
 <style lang="less">
 #home {
+  position: absolute;
   z-index: 1;
-  #hero {
-    min-height: calc(~"100vh - 88px");
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 66.66%;
-      height: 100%;
-      background-color: #76abc1;
-      z-index: 0;
-    }
-    & > * {
-      z-index: 1;
-    }
-  }
-  #portfolio {
-    min-height: 100vh;
-  }
-  #about {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  
 }
 </style>

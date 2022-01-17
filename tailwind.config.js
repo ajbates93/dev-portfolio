@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Amaranth', 'Helvetica', 'Arial', 'sans-serif']
+      'sans': ['ui-sans-serif,system-ui,-apple-system,Segoe UI', 'sans-serif']
     },
     extend: {
       colors: {

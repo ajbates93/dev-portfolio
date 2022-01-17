@@ -1,7 +1,13 @@
 <template>
   <Navigation />
-  <main role="main" id="main">
-    <router-view/>
+  <main class="min-h-screen bg-gray-800" role="main" id="main">
+    <router-view v-slot="{ Component, route }">
+      <transition 
+        :enter-active-class="route.meta.enterClass" :leave-active-class="route.meta.leaveClass"
+      >
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 
@@ -16,9 +22,8 @@ export default defineComponent({
 })
 </script>
 
-
 <style lang="less">
-main#main {
-  min-height: 100vh;
+#main {
+  overflow: hidden;
 }
 </style>
