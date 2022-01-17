@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./public/**/*.html', './src/**/*.{vue,js,ts}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
       'sans': ['ui-sans-serif,system-ui,-apple-system,Segoe UI', 'sans-serif']

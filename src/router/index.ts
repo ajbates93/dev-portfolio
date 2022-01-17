@@ -7,8 +7,8 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: Home,
     meta: {
-      enterClass: 'animate__animated animate__fadeInLeft',
-      leaveClass: 'animate__animated animate__fadeOutRight',
+      enterClass: 'animate__animated animate__fadeIn',
+      leaveClass: 'animate__animated animate__fadeOut',
     }
   },
   {
@@ -19,8 +19,8 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
     meta: {
-      enterClass: 'animate__animated animate__fadeInRight',
-      leaveClass: 'animate__animated animate__fadeOutLeft',
+      enterClass: 'animate__animated animate__fadeIn',
+      leaveClass: 'animate__animated animate__fadeOut',
     }
   },
   {
@@ -29,7 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue'),
+    meta: {
+      enterClass: 'animate__animated animate__fadeIn',
+      leaveClass: 'animate__animated animate__fadeOut',
+    }
   },
   {
     path: '/contact',
@@ -37,7 +41,11 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue'),
+    meta: {
+      enterClass: 'animate__animated animate__fadeIn',
+      leaveClass: 'animate__animated animate__fadeOut',
+    }
   }
 ]
 
