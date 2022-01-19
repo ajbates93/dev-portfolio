@@ -7,8 +7,8 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: Home,
     meta: {
-      enterClass: 'animate__animated animate__fadeIn',
-      leaveClass: 'animate__animated animate__fadeOut',
+      enterClass: 'animate__fadeIn',
+      leaveClass: 'animate__fadeOut',
     }
   },
   {
@@ -19,8 +19,8 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
     meta: {
-      enterClass: 'animate__animated animate__fadeIn',
-      leaveClass: 'animate__animated animate__fadeOut',
+      enterClass: 'animate__fadeIn',
+      leaveClass: 'animate__fadeOut',
     }
   },
   {
@@ -31,8 +31,8 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Portfolio.vue'),
     meta: {
-      enterClass: 'animate__animated animate__fadeIn',
-      leaveClass: 'animate__animated animate__fadeOut',
+      enterClass: 'animate__fadeIn',
+      leaveClass: 'animate__fadeOut',
     }
   },
   {
@@ -43,8 +43,8 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue'),
     meta: {
-      enterClass: 'animate__animated animate__fadeIn',
-      leaveClass: 'animate__animated animate__fadeOut',
+      enterClass: 'animate__fadeIn',
+      leaveClass: 'animate__fadeOut',
     }
   }
 ]
