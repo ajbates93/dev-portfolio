@@ -3,9 +3,9 @@
     <div id="hero" class="mx-auto max-w-screen-xl py-10">
       <div class="hero-title text-white font-bold text-5xl mb-5">My work</div>
       <div class="hero-subtitle dark:text-gray-400 text-black-700 text-xl">A few examples of what I get up to both in work and play.</div>
-      <section id="workGrid" class="mt-20 grid gap-5 grid-cols-2">
+      <section id="workGrid" class="mt-20 grid gap-5 grid-cols-2 grid-rows-2">
         <PortfolioItem v-for="(item, idx) in workItems" :key="idx" 
-          :title="item.title" :summary="item.summary" :link="item.link" />
+          :title="item.title" :summary="item.summary" :link="item.link" :id="item.id" />
         <!-- <article class="p-5 rounded-md dark:bg-gray-900 bg-gray-100 animate__animated animate__faster animate__fadeInUp animate__delay-1s" id="github">
           <div class="text-white text-2xl font-bold mb-5">Github</div>
           <div class="dark:text-gray-400 text-black-700 text-lg mb-10">text about title.</div>
@@ -35,29 +35,34 @@
 import { defineComponent, ref } from 'vue'
 import PortfolioItem from '../components/portfolio/PortfolioItem.vue'
 
-interface itemStructure {
+interface IPortfolioItem {
+  id: number,
   title: string,
   summary: string,
   link: string
 }
 
-const items: itemStructure[] = [
+const items: IPortfolioItem[] = [
   {
+    id: 1,
     title: 'Github',
     summary: 'text about title.',
     link: 'https://github.com/ajbates93'
   },
   {
+    id: 2,
     title: 'Github',
     summary: 'text about title.',
     link: 'https://github.com/ajbates93'
   },
   {
+    id: 3,
     title: 'Github',
     summary: 'text about title.',
     link: 'https://github.com/ajbates93'
   },
   {
+    id: 4,
     title: 'Github',
     summary: 'text about title.',
     link: 'https://github.com/ajbates93'
@@ -66,13 +71,8 @@ const items: itemStructure[] = [
 
 export default defineComponent({
   setup() {
-    const workItems: itemStructure[] = ref([])
-    items.forEach(x => workItems.value.push(x))
-    workItems.value.push(items)
-    return workItems
-  },
-  methods: {
-
+    const workItems = ref(items)
+    return { workItems }
   },
   components: {
     PortfolioItem
