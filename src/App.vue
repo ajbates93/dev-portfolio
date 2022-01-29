@@ -11,15 +11,18 @@
       </transition>
     </router-view>
   </main>
+  <Overlay />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Navigation from "@/components/Navigation.vue"
+import Overlay from "@/components/Overlay.vue"
 
 export default defineComponent({
   components: {
-    Navigation
+    Navigation,
+    Overlay
   }
 })
 </script>

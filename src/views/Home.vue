@@ -1,12 +1,61 @@
 <template>
-  <div id="home" class="mx-auto w-full max-w-screen-xl">
-    <div id="hero" class="mx-auto py-10">
-      <div class="hero-title dark:text-white text-pastel-blue font-bold text-5xl mb-5">Hi, I'm Alex</div>
-      <div class="hero-subtitle dark:text-gray-400 text-black-700 text-xl">I'm a front-end developer, musician and dog-owner.</div>
-      <div class="hero-bullets mt-20 my-10 ">
+  <div id="home" class="mx-auto w-full">
+    <div id="hero" class="mx-auto my-10 md:my-40 md:mb-60 text-center px-5">
+      <div class="hero-title dark:text-white text-pastel-blue font-bold text-7xl mb-5">Hello!</div>
+      <div class="hero-title dark:text-white text-pastel-blue font-bold text-7xl mb-5">I'm Alex Bates</div>
+      <div class="hero-subtitle dark:text-gray-400 text-black-700 w-full max-w-2xl mx-auto text-xl">I'm a software developer with a keen passion for building beautiful websites and web applications.</div>
+    </div>
+    <div id="examples" class="grid grid-cols-2">
+      <div class="picture-example relative group">
+        <picture>
+          <img class="w-full" src="@/assets/images/image-1.jpg" />
+        </picture>
+        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
+        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
+        </div>
+      </div>
+      <div class="picture-example relative group">
+        <picture>
+          <img class="w-full" src="@/assets/images/image-3.jpg" />
+        </picture>
+        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
+        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
+        </div>
+      </div>
+      <div class="picture-example relative group">
+        <picture>
+          <img class="w-full" src="@/assets/images/image-4.jpg" />
+        </picture>
+        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
+        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
+        </div>
+      </div>
+      <div class="picture-example relative group">
+        <picture>
+          <img class="w-full" src="@/assets/images/image-2.jpg" />
+        </picture>
+        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
+        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="p-5">
+      <div class="hero-bullets mt-20 my-10 max-w-screen-xl mx-auto">
         <div v-for="(bullet, idx) in bullets" :key="idx" class="hero-bullet flex items-center my-5 animate__animated animate__faster animate__fadeInUp" :class="`animate__delay-${bullet.delay}`">
           <div class="hero-bullet-icon flex-none w-auto pr-10" v-html="bullet.icon"></div>
           <div class="hero-bullet-text dark:text-white text-gray-700 text-lg">{{bullet.content}}</div>
+        </div>
+        <div class="about-link">
+          <router-link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg inline-flex items-center" to="/">
+            More about me
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </router-link>
         </div>
       </div>
       <div class="hero-action py-10">
