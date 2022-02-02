@@ -49,8 +49,8 @@
           <div class="hero-bullet-icon flex-none w-auto pr-10" v-html="bullet.icon"></div>
           <div class="hero-bullet-text dark:text-white text-gray-700 text-lg">{{bullet.content}}</div>
         </div>
-        <div class="about-link">
-          <router-link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg inline-flex items-center" to="/">
+        <div class="about-link mt-10">
+          <router-link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg inline-flex items-center animate__animated animate__faster animate__fadeInUp animate__delay-1s" to="/about">
             More about me
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

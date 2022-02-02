@@ -7,9 +7,9 @@
         </svg>
       </a>
     </div>
-    <ul id="sidebar-links">
+    <ul id="sidebar-links" class="px-10">
       <li v-for="link in items" :key="link.id">
-        <router-link :to="link.link">{{link.label}}</router-link>
+        <router-link @click="$emit('close')" class="text-3xl text-white my-2 inline-block font-bold transition" :to="link.link">{{link.label}}</router-link>
       </li>
     </ul>
   </aside>
@@ -60,3 +60,22 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="less" scoped>
+a {
+  position: relative;
+  color: #222;
+  overflow: hidden;
+  background: linear-gradient(to right, #222, #222 50%,#fff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 375ms ease;
+
+  &:hover {
+    background-position: 0 100%;
+  }
+}
+</style>
