@@ -1,6 +1,6 @@
 <template>
   <Navigation />
-  <main class="min-h-screen dark:bg-gray-800 bg-gray-100" role="main" id="main">
+  <main class="min-h-screen dark:bg-gray-900 bg-gray-100" role="main" id="main">
     <router-view v-slot="{ Component, route }">
       <transition 
         class="animate__animated animate__faster"

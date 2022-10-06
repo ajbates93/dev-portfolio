@@ -1,9 +1,12 @@
 <template>
   <div id="home" class="mx-auto w-full">
-    <div id="hero" class="mx-auto my-10 md:my-40 md:mb-60 text-center px-5">
+    <div id="hero" class="mx-auto my-10 md:my-20 md:mb-40 text-center px-5">
       <div class="hero-title dark:text-white text-pastel-blue font-bold text-7xl mb-5">Hello!</div>
       <div class="hero-title dark:text-white text-pastel-blue font-bold text-7xl mb-5">I'm Alex Bates</div>
-      <div class="hero-subtitle dark:text-gray-400 text-black-700 w-full max-w-2xl mx-auto text-xl">I'm a software developer with a keen passion for building beautiful websites and web applications.</div>
+      <picture class="hero-picture text-center my-10 block">
+        <img class="mx-auto overflow-hidden rounded-full border-4 border-slate-800" src="@/assets/images/headshot.jpg" alt="">
+      </picture>
+      <div class="hero-subtitle dark:text-gray-400 text-black-700 w-full max-w-2xl mx-auto text-xl">I'm a full-stack software developer with a keen passion for building beautiful websites and web applications.</div>
     </div>
     <div id="examples" class="grid grid-cols-2">
       <div class="picture-example relative group">
