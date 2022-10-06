@@ -1,5 +1,5 @@
 <template>
-  <nav class="dark:bg-gray-800 bg-gray-200 p-5">
+  <nav class="dark:bg-gray-900 bg-gray-200 p-5">
     <div class="nav-container mx-auto text-2xl flex justify-end items-center">
       <router-link class="dark:text-white text-gray-700 font-bold mr-auto border-b-pastel-blue border-b-2" as="a" to="/">alex bates</router-link>
       <a @click="toggleTheme" class="border-0 hover:border-transparent cursor-pointer">
