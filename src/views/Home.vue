@@ -8,44 +8,6 @@
       </picture>
       <div class="hero-subtitle dark:text-gray-400 text-black-700 w-full max-w-2xl mx-auto text-xl">I'm a full-stack software developer with a keen passion for building beautiful websites and web applications.</div>
     </div>
-    <div id="examples" class="grid grid-cols-2">
-      <div class="picture-example relative group">
-        <picture>
-          <img class="w-full" src="@/assets/images/image-1.jpg" />
-        </picture>
-        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
-        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
-        </div>
-      </div>
-      <div class="picture-example relative group">
-        <picture>
-          <img class="w-full" src="@/assets/images/image-3.jpg" />
-        </picture>
-        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
-        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
-        </div>
-      </div>
-      <div class="picture-example relative group">
-        <picture>
-          <img class="w-full" src="@/assets/images/image-4.jpg" />
-        </picture>
-        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
-        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
-        </div>
-      </div>
-      <div class="picture-example relative group">
-        <picture>
-          <img class="w-full" src="@/assets/images/image-2.jpg" />
-        </picture>
-        <div class="overlay absolute w-full h-full bg-black top-0 left-0 opacity-0 group-hover:opacity-30 transition"></div>
-        <div class="bg-transparent w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-          <router-link to="/" class="sm:w-auto hover font-bold text-xl tracking-wide bg-pastel-blue rounded-xl text-white py-1 px-4 hover:bg-gray-800 hover:text-pastel-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 hover:bg-violet-500">View</router-link>
-        </div>
-      </div>
-    </div>
     <div id="content" class="p-5">
       <div class="hero-bullets mt-20 my-10 max-w-screen-xl mx-auto">
         <div v-for="(bullet, idx) in bullets" :key="idx" class="hero-bullet flex items-center my-5 animate__animated animate__faster animate__fadeInUp" :class="`animate__delay-${bullet.delay}`">
