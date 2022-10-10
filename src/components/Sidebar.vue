@@ -50,18 +50,12 @@ export default defineComponent({
       },
       {
         id: 2,
-        label: 'About',
-        icon: 'about-icon',
-        link: '/about'
-      },
-      {
-        id: 3,
         label: 'Portfolio',
         icon: 'portfolio-icon',
         link: '/work'
       },
       {
-        id: 4,
+        id: 3,
         label: 'Contact',
         icon: 'contact-icon',
         link: '/contact'
